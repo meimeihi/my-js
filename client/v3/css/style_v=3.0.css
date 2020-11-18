@@ -1,0 +1,891 @@
+body{
+    background: #100E1C;
+    user-select: none;
+    font-size:5.5%;
+}
+a:hover, a:visited, a:link, a:active {
+    text-decoration: none;
+    color: #9FA2B3;
+}
+li{
+    list-style: none;
+}
+.container-fluid{
+    margin: 0 auto;
+}
+.row{
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pc{
+    display: none;
+}
+
+.title{
+    font-weight:bold;
+    font-size: 1.6rem;
+    font-family:PingFang SC;
+    text-align: center;
+    color: #ffffff;
+    letter-spacing: 1px;
+    margin: 0;
+    line-height: 2;
+}
+.stitle{
+    font-size: 1rem;
+    letter-spacing: 0.4px;
+}
+
+.desc{
+    color: #9FA2B3;
+    width: 85%;
+    margin: 0 auto;
+    font-size: .9rem;
+    line-height: 1.6;
+    margin-top: .4rem;
+}
+
+/* top */
+.top .logo{
+    width: 2rem;
+    margin: 1.2rem;
+}
+
+.top .menu-pic li{
+    display: inline;
+}
+.top .menu-pic li:hover, .top .menu-pic li.active{
+    border-bottom: 2px solid #7ED320;
+    padding-bottom: .5rem;
+}
+.top .menu-pic li a{
+    padding: 1rem;
+    font-size: .9rem;
+    color: #9FA2B3;
+}
+
+.top .menu{
+    padding: 1.2rem;
+}
+.top .menu img{
+    width: 1.4rem;
+}
+
+.top .menu-nav{
+    position: fixed;
+    background: rgba(0, 0, 0, .8);
+    width: 50%;
+    height: 100%;
+    right: 0;
+    display: none;
+    z-index: 9;
+}
+.top .close_menu{
+    position: fixed;
+    background: rgba(0, 0, 0, .2);
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    z-index: 8;
+}
+.top .menu-nav .menu-close{
+    position: relative;
+    padding: 1rem;
+    left: 65%;
+    top: 0;
+}
+
+.top .menu-nav .menu-close img{
+    width: 1.5rem;
+    height: 1.5rem;
+    transition: transform 0.4s ease-out;
+    -o-transition:-o-transform 0.4s ease-out;
+    -ms-transition:-ms-transform 0.4s ease-out;
+    -moz-transition: -moz-transform 0.4s ease-out;
+    -webkit-transition: -webkit-transform 0.4s ease-out;
+}
+.top .menu-nav .menu-close img:hover{
+    transform:rotate(100deg);
+    -o-transform:rotate(100deg); 	/* Opera */
+    -ms-transform:rotate(100deg); 	/* IE 9 */
+    -moz-transform:rotate(100deg); 	/* Firefox */
+    -webkit-transform:rotate(100deg); /* Safari 和 Chrome */
+}
+.top .menu-nav dd{
+    text-align: center;
+    line-height: 2;
+    margin-top: 2rem;
+    font-size: 1rem;
+}
+.top .pro-menu{
+    margin-top: 1.2rem;
+    text-align: right;
+}
+.top .pro-menu a{
+    padding: 1rem 1rem 1rem .5rem;
+}
+.top .pro-menu a img{
+    width: 1.5rem;
+}
+/* top end */
+
+/* banner */
+.banner .banner-bg{
+    position: relative;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../image/pic_banner_1@3x.png);
+    width: 100%;
+    padding-bottom: 85%;
+    margin-top: 1rem;
+}
+.banner .vip-banner-bg{
+    position: relative;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../image/pic_banner_3@3x.png);
+    width: 100%;
+    padding-bottom: 52%;
+    margin-top: 1rem;
+}
+.banner .vip-banner-content{
+    position: absolute;
+    top: 40%;
+    right: 30%;
+    color: #fff;
+}
+/* banner end */
+
+/* download */
+.download{
+    padding: 0 5%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+.download .btn{
+    color: #7ed320;
+    border: 1px solid #7ed320;
+    min-width: 8rem;
+    width: 85%;
+    height: 2.6rem;
+    background-repeat: no-repeat;
+    background-size: auto 60%;
+    background-position: center;
+    margin: 0 auto;
+    display: block;
+    margin-top: 1rem;
+}
+.download .btn.iOS{
+    background-image: url("../image/button_iOS@3x.png");
+}
+.download .btn.Android{
+    background-image: url("../image/button_Android@3x.png");
+}
+.download .testFight-download{
+    max-width: 90%;
+    color: #9FA2B3;
+    font-size: .8rem;
+    background-color: #1D1F28;
+    border-radius: 4px;
+    margin: 1rem auto;
+    padding: 1rem;
+}
+.download .testFight-download .icon{
+    width: 2.4rem;
+}
+.download .testFight-download .testFight{
+    width: 10rem;
+    border: none;
+    display: inline-block;
+    background: #373A46;
+    float: right;
+    margin: 0;
+    color: #FFFFFF;
+    font-size: .8rem;
+    border-radius: 2rem;
+}
+/* download end */
+
+/* description */
+.description{
+    margin-top: 3rem;
+}
+
+.description .app-icons{
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0;
+}
+.description .app-icons li{
+    float: left;
+    display: block;
+    width: 19%;
+    margin: 3%;
+}
+.description .app-icons li img{
+    width: 100%;
+}
+
+.description .video, .description .banner, .description .app-icons{
+    width: 85%;
+    margin: 1rem auto 0;
+}
+.description .dbbanner{
+    width: 90%;
+    margin: 1rem auto 0;
+}
+.description .adimg{
+    width: 49%;
+    display: inline-block;
+    margin: 0 auto;
+    text-align: center;
+}
+.description .adimg img{
+    width: 90%;
+}
+/* description end */
+
+/* slogan */
+.slogan{
+    text-align: center;
+}
+.slogan img{
+    width: 40%;
+    max-width: 80px;
+    margin-top: 4rem;
+}
+.slogan p{
+    color: #9FA2B3;
+    font-size: 1rem;
+    margin-top: .5rem;
+}
+/* slogan end */
+
+
+/* slogan-pc */
+.slogan-pc{
+    text-align: center;
+    margin-top: 4rem;
+    display: none;
+}
+.slogan-pc .slogan-pc-item{
+    background-color: #161823;
+    margin: .5rem;
+    padding: 1rem;
+}
+.slogan-pc img{
+    width: 40%;
+    max-width: 80px;
+}
+.slogan-pc h5{
+    color: #ffffff;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+.slogan-pc p{
+    color: #9FA2B3;
+    font-size: .8rem;
+    margin-top: .5rem;
+}
+/* slogan-pc end */
+
+/* footer */
+.footer{
+    margin-top: 4rem;
+}
+.footer dl{
+    padding-left: 10%;
+}
+.footer dt{
+    color: #FFFFFF;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.footer dd{
+    font-size: 1rem;
+    color: #9FA2B3;
+    line-height: 2;
+}
+.footer dd img{
+    width: 18%;
+    max-width: 40px;
+    margin-right: 4%;   
+}
+/* footer end */
+
+
+.step{
+    font-size: 1.4rem;
+    line-height: 3;
+    color: #FFFFFF;
+}
+.step span{
+    color: #9FA2B3;
+    padding-right: .5rem;
+}
+
+/* products */
+.products{
+    padding: 1rem;
+}
+.products .pro-item{
+    padding: 4px;
+    position: relative;
+}
+.products .pro-item .probox{
+    border: 1px solid #100E1C;
+}
+.products .pro-item.active .probox{
+    border: 1px solid #8EF122;
+}
+.products .pro-item .probox{
+    padding: .6rem;
+}
+.products .pro-item .probox p{
+    margin: 0;
+}
+.products .pro-item .probox .pro-tip1{
+    position: absolute;
+    top: 15%;
+    right: 2px;
+    background-color: #8D4DE9;
+    color: #FFFFFF;
+    padding: 0 6px;
+    border-radius: 2px;
+}
+.products .pro-item .probox .pro-tip2{
+    display: block;
+    text-align: right;
+}
+.products .pro-item .probox .pro-title{
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.products .pro-item .probox .pro-slogan{
+    font-size: .9rem;
+}
+.products .pro-item .probox .pro-price{
+    font-size: 1.4rem;
+    text-align: left;
+}
+.products .pro-item.pro .probox .pro-price{
+    text-align: right;
+    font-weight: bold;
+}
+.products .pro-item .probox{
+    background-color: #161823;
+    border-radius: 6px;
+    color: #9FA2B3;
+}
+
+.products .pro-item.pro .probox{
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color: #FFFFFF;
+}
+.products .pro-item.pro:nth-child(odd) .probox{
+    background-image: url("../image/bg_orange@3x.png");
+}
+.products .pro-item.pro:nth-child(even) .probox{
+    background-image: url("../image/bg_purple@3x.png");
+}
+/* products end */
+
+/* paytype */
+.paytype{
+    padding: 1rem;
+}
+.paytype .pay-box{
+    border: 1px solid #100E1C;
+}
+.paytype .active .pay-box{
+    position: relative;
+    border: 1px solid #8EF122;
+}
+.paytype span{
+    vertical-align: middle;
+}
+.paytype .active .select-tip{
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    margin-top: -.75rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    display: inline-block;
+    background-image: url("../image/icon_checked@3x.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% auto;
+}
+.paytype .pay-box{
+    width: 98%;
+    color: #9FA2B3;
+    background-color: #161823;
+    margin: 1%;
+    line-height: 2;
+    padding: 1rem;
+    border-radius: 8px;
+    font-size: .8rem;
+}
+.paytype .pay-box img{
+    max-height: 2rem;
+    margin-right: .5rem;
+}
+/* paytype end */
+
+/* propay */
+.propay{
+    padding: 0 1rem 1rem;
+    margin-bottom: 2rem;
+}
+.propay .hr{
+    background-color: #373A46;
+    margin: 0;
+}
+.propay .detail{
+    background-color: #161823;
+    border-radius: 8px;
+}
+.propay .detail p{
+    margin: 0;
+    line-height: 4rem;
+    color: #9FA2B3;
+    padding: 0 1.5rem;
+    font-size: 1.1rem;
+}
+.propay .detail span{
+    float: right;
+    color: #7ED320;
+}
+.propay .pay-btn{
+    margin-top: 1rem;
+    border-radius: 8px;
+    width: 100%;
+    font-size: 1.1rem;
+    color: #FFFFFF;
+    line-height: 2rem;
+    background-color: #6859EB;
+}
+/* propay end */
+
+/* propay */
+.vip{
+    padding: 1rem;
+}
+.vip h5{
+    color: #FFFFFF;
+    margin-top: 2rem;
+}
+.vip .table{
+    background-color: #161823;
+    border-radius: 10px;
+    overflow: hidden;
+    color: #9FA2B3;
+    font-size: 1.1rem;
+}
+.vip .table th{
+    color: #FFFFFF;
+    background-color: #6859EB;
+    font-weight: bold;
+}
+.vip .table th:first-child, .vip .table td:first-child{
+    border-right: 2px solid #373A46;
+}
+.vip .table .bool-icon{
+    width: 1.4rem;
+}
+.vip .pay-desc{
+    color: #9FA2B3;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+/* propay end */
+
+/* userinfo */
+.userinfo{
+    padding: 1rem;
+    color: #FFFFFF;
+}
+.userinfo .userinfo-card{
+    padding: 1rem;
+    border-radius: 12px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../image/bg_green@3x.png");
+}
+.userinfo .avatar{
+    max-width: 100px;
+}
+.userinfo .avatar img{
+    width: 90%;
+}
+.userinfo .userinfo-p{
+    margin: 0;
+    font-size: 1rem;
+}
+.userinfo .userinfo-p span{
+    float: right;
+}
+.userinfo .userinfo-hr{
+    background-color: #FFFFFF;
+}
+.userinfo .buy{
+    background-color: #FFFFFF;
+    color: #6859EB;
+    padding: .5rem 1rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+/* userinfo end */
+
+/* order */
+.order{
+    padding: 1rem;
+    max-width: 1000px;
+}
+.order h5{
+    color: #FFFFFF;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.order .myid{
+    text-align: left;
+}
+.order .order-item{
+    color: #9FA2B3;
+    background-color: #161823;
+    font-size: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+.order .order-item .detail{
+    border-top: 1px solid #373A46;
+    padding: 1rem;
+    display: none;
+}
+.order .order-item .detail p{
+    margin: 0;
+    line-height: 2;
+}
+.order .order-item .detail .success{
+    color: #7ED320;
+}
+.order .order-items{
+    width: 100%;
+    margin-top: 2rem;
+}
+.order .order-items .order-item-title{
+    padding: 1rem 2.8rem 1rem 1rem;
+}
+.order .order-items .order-item-title .order-no{
+    float: right;
+    color: #ffffff;
+}
+.order .order-items .order-item .order-item-title .silde{
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    right: .5rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    padding: 1rem;
+    background-image: url("../image/icon_up@3x.png");
+}
+.order .order-items .order-item .order-item-title .silde.down{
+    background-image: url("../image/icon_down@3x.png");
+}
+
+.order .table-head{
+    color: #FFFFFF;
+    border-radius: 4px;
+    overflow: hidden;
+    background-color: #6859EB;
+    margin-bottom: .4rem;
+}
+.order .table-body{
+    color: #9FA2B3;
+    background-color: #161823;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.order .table-body tr:nth-child(even) {
+    background: #1D1F28;
+}
+/* order end */
+
+
+/* login */
+.loginBox{
+    background-color: #0E0F1A;
+    display: none;
+    padding-top: 2rem;
+}
+.loginBox .close{
+    display: inline-block;
+    background-image: url("../image/icon_close.png");
+    width: 20px;
+    height: 20px;
+    float: left;
+}
+.loginBox .title{
+    color: #FFFFFF;
+    font-size: 1rem;
+}
+
+.loginBox .tip-text{
+    color: #5B5C66;
+    line-height: 1.8;
+    padding-top: 1rem;
+}
+
+.loginBox .tip-icon{
+    display: inline-block;
+    background-image: url("../image/icon_alert.png");
+    width: 13px;
+    height: 13px;
+    margin-right: .5rem;
+}
+
+.loginBox .ipt{
+    width: 100%;
+    background-color: #161823;
+    border: 1px solid #1D1F28;
+    border-radius: 4px;
+    height: 3.4rem;
+    font-size: 1rem;
+    text-indent: 0.5rem;
+    color: #9FA2B3;
+}
+.loginBox .areacode-p{
+    font-size: 2rem;
+    color: #9FA2B3;
+    position: absolute;
+    left: .5rem;
+}
+.loginBox .ipt.areacode{
+    width: 90%;
+    text-indent: 2rem;
+}
+.loginBox .vcode{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    max-width: 38%;
+    border-radius: 4px;
+}
+.loginBox .sendsmscode{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30%;
+    height: 100%;
+    border-radius: 4px;
+    background-color: #373A46;
+    border: none;
+    color: #9FA2B3;
+    font-size: 1rem;
+}
+.loginBox .loginbtn{
+    margin-top: 1rem;
+    border-radius: 8px;
+    width: 100%;
+    font-size: 1.1rem;
+    color: #FFFFFF;
+    line-height: 2rem;
+    background-color: #6859EB;
+}
+.loginBox .tip{
+    color: #5B5C66;
+    font-size: .8rem;
+    text-align: center;
+    padding-top: .6rem;
+}
+
+/* login end */
+
+
+
+.banner-content{
+    display: none;
+}
+@media only screen and (min-width: 768px) {
+    .description {
+        margin-top: 8rem;
+    }
+    .loginBox{
+        padding: 3rem;
+    }
+    .order .myid{
+        text-align: center;
+    }
+    .order .order-items{
+        margin: 0;
+        padding-left: 1rem;
+    }
+}
+
+/* pc web 定制*/
+@media only screen and (min-width: 960px) {
+    .footer-bg{
+        background-color: #161823;
+        padding-top: 2rem;
+        margin-top: 4rem;
+    }
+    .banner{
+        max-width: 1440px;
+    }
+    .banner .banner-bg{
+        background-image: url("../image/pic_banner_bg.png");
+        background-size: 100% auto;
+        padding-bottom: 35%;
+        margin-top: 5rem;
+    }
+    .banner .vip-banner-bg{
+        background-image: url("../image/web_vip_banner.png");
+        background-size: 100% auto;
+        padding-bottom: 35%;
+    }
+    .mobile{
+        display: none;
+    }
+    .pc{
+        display: block;
+    }
+    .top{
+        margin-top: 2rem;
+    }
+    .slogan-pc, .banner-content{
+        display: flex;
+    }
+
+    .banner .banner-content{
+        position: absolute;
+        width: 100%;
+        max-width: 100%;
+        left: 0;
+        top: 0;
+    }
+    .banner .banner-content .img-bg{
+        background-image: url(../image/pic_banner_phone.png);
+        padding-bottom: 95%;
+        background-size: auto 100%;
+        background-position: center right;
+        background-repeat: no-repeat;
+        margin-top: 3.4rem;
+    }
+    .banner .banner-content .text{
+        padding-top: 12rem;
+        color: #FFFFFF;
+        width: 450px;
+        max-width: 90%;
+    }
+    .banner .banner-content .text h5{
+        padding: .5rem 0;
+    }
+    .banner .banner-content .text .detail{
+        color: #D0D1D5;
+        line-height: 2;
+    }
+
+    .banner .banner-content .text .testFight{
+        width: 100%;
+        color: #FFFFFF;
+        font-size: .8rem;
+        background-color: #6859EB;
+        border-radius: 1rem;
+    }
+    .banner .banner-content .text .testFightp{
+        padding: 0 1rem;
+        color: #9FA2B3;
+    }
+    .banner .banner-content .text .btncol{
+        margin-bottom: 1rem;
+    }
+    .banner .banner-content .text .download_btn{
+        background-color: #7ED320;
+        width: 95%;
+        height: 3rem;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .banner .banner-content .text .download_btn.iOS{
+        background-image: url("../image/button_iOS.png");
+    }
+    .banner .banner-content .text .download_btn.Android{
+        background-image: url("../image/button_Android.png");
+    }
+    .banner .banner-content .text .download_btn.GooglePlay{
+        background-image: url("../image/button_GooglePlay.png");
+    }
+    .footer{
+        padding-bottom: 2rem;
+    }
+    .footer dd{
+        float: left;
+        padding-right: 1.5rem;
+    }
+}
+
+/* payresult */
+.payresult{
+    text-align: center;
+    padding: 30px;
+    background-color: #6859ea;
+    color: #ddd;
+}
+.payresult h4{
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 2;
+    border-bottom: 1px solid #8678ff;
+}
+.payresult p{
+    margin: 0;
+    font-size: 14px;
+    line-height: 2;
+}
+.payresult span{
+    font-weight: bold;
+    color: #c7e0ff;
+}
+/* payresult end */
+
+.layerAlertDownloadBtn .download_btn{
+    background-color: #7ED320;
+    width: 95%;
+    height: 3rem;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.layerAlertDownloadBtn .download_btn.Android{
+    background-image: url("../image/button_Android.png");
+}
+.layerAlertDownloadBtn .download_btn.GooglePlay{
+    background-image: url("../image/button_GooglePlay.png");
+}
+.layerAlertDownloadBtn{
+    background-color: #010101;
+}
+.layerAlertDownloadBtn .download_btn
+{
+    width: 48%;
+    margin: 1%;
+}
